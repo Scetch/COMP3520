@@ -40,7 +40,7 @@ After each menu option the canvas is cleared before drawing the next option.
 
 ### End Program
 The input thread locks the mutex and sets the `running` flag to `false`.
-This will cause the main thread to break from the loop and wait for the `input_thread` to exit.
+This will cause the main thread to break from the render loop and wait for the `input_thread` to exit.
 
 ### Draw Points
 This option will allow a user to enter 1-5 points.
@@ -57,7 +57,7 @@ Point 2 (x y color) > 50 50 FF0000FF
 This option will draw 3 lines:
 * A line specified by the user with two points, (`x1`, `y1`) and (`x2`, `y2`), and `color`
 * The original line translated by `trans_x` and `trans_y`
-* THe original line rotated by `angle`
+* The original line rotated by `angle`
 
 ```
 Specify line (x1 y1 x2 y2 color) > 0 0 50 50 FF0000FF
