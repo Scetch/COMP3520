@@ -357,7 +357,7 @@ void draw_line(uint32_t pixels[][SCREEN_WIDTH], int x1, int y1, int x2, int y2, 
             std::swap(y1, y2);
 
         for(int y = y1; y < y2; y++) {
-            if((y >= 0 && y < SCREEN_HEIGHT) && (x >= 0 && x < SCREEN_WIDTH)) {
+            if((y >= 0 && y < SCREEN_HEIGHT) && (x1 >= 0 && x1 < SCREEN_WIDTH)) {
                 pixels[y][x1] = color;
             }
         }
